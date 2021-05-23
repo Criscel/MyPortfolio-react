@@ -3,5 +3,8 @@
 .navbar-container {
     background: rgb(240, 166, 37);
     font-family: 'Cinzel Decorative', cursive;
-    height: 20%;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
 }

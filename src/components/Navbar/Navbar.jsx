@@ -1,11 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router,Link  } from "react-router-dom"
 import "./Navbar.scss";
 
 const Navbar = () => {
     return (
-        <div className="navbar-container">
-            <h1>Criscel</h1>
-        </div>
+        <nav className="navbar-container">
+                <h1>CRISCEL</h1>
+            <Router>
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/About">About Me</Link>
+                <Link className="link" to="/Portfolio">Portfolio</Link>
+                <Link className="link" to="/Contact">Contact Me</Link>
+            </Router>
+            </nav>
     )
 }
 
